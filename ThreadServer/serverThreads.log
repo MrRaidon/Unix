@@ -1,0 +1,55 @@
+INFO:echo-server: Client glushchenko login on 2021-11-16 17:38:24.435762
+INFO:echo-server: Input asd on 2021-11-16 17:38:28.147401
+INFO:echo-server: Input qwe on 2021-11-16 17:38:31.945025
+INFO:echo-server: Client glushchenko login on 2021-11-16 17:38:43.969088
+INFO:echo-server: Input asd on 2021-11-16 17:38:45.113478
+INFO:echo-server: Input qwe on 2021-11-16 17:38:46.172442
+INFO:echo-server: Input None on 2021-11-16 17:39:18.202122
+INFO:echo-server: Input None on 2021-11-16 17:39:20.766284
+INFO:echo-server: Client glushchenko login on 2021-11-16 17:41:37.914219
+INFO:echo-server: Input CLOSE on 2021-11-16 17:42:20.322858
+INFO:echo-server: Input None on 2021-11-16 17:42:20.324518
+INFO:echo-server: Client glushchenko login on 2021-11-16 17:45:25.172971
+INFO:echo-server: Input None on 2021-11-16 17:46:51.136641
+INFO:echo-server: Client glushchenko login on 2021-11-16 17:47:04.818354
+INFO:echo-server: Input qwe on 2021-11-16 17:47:06.504094
+INFO:echo-server: Client glushchenko login on 2021-11-16 17:47:36.625211
+INFO:echo-server: Input qwe on 2021-11-16 17:47:37.956058
+INFO:echo-server: Input exit on 2021-11-16 17:52:59.983020
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 17:55:07.778248
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 17:55:44.035025
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 17:56:23.576031
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 17:58:03.303058
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 17:58:36.025554
+INFO:echo-server: Input asd on 2021-11-16 17:58:41.607297
+INFO:echo-server: Input qweqe on 2021-11-16 17:58:43.588425
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 17:58:52.115468
+INFO:echo-server: Input asdasd on 2021-11-16 17:58:56.417655
+INFO:echo-server: Input qwe on 2021-11-16 17:58:57.302818
+INFO:echo-server: Input exit on 2021-11-16 17:59:08.734674
+INFO:echo-server: Input exit on 2021-11-16 17:59:11.993097
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:07:50.019480
+INFO:echo-server: Input qwe on 2021-11-16 18:07:52.417848
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:11:13.202533
+INFO:echo-server: Input wqe on 2021-11-16 18:11:17.481139
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:12:21.698542
+INFO:echo-server: Input asd on 2021-11-16 18:12:22.419845
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:12:47.951972
+INFO:echo-server: Input qwe on 2021-11-16 18:12:48.887157
+INFO:echo-server: Input exit on 2021-11-16 18:14:28.601012
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:14:53.150197
+INFO:echo-server: Input qwe on 2021-11-16 18:14:54.260067
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:15:13.293064
+INFO:echo-server: Input asd on 2021-11-16 18:15:14.574288
+INFO:echo-server: Input None on 2021-11-16 18:17:09.324286
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:17:14.378505
+INFO:echo-server: Input 123 on 2021-11-16 18:17:15.030215
+INFO:echo-server: Input None on 2021-11-16 18:19:51.462995
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:20:25.809311
+INFO:echo-server: Input awd on 2021-11-16 18:20:27.078335
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:22:34.064903
+INFO:echo-server: Input 123 on 2021-11-16 18:22:36.232119
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:22:51.220963
+INFO:echo-server: Input wer on 2021-11-16 18:22:52.245919
+INFO:echo-server: Input exit on 2021-11-16 18:23:00.590804
+INFO:echo-server: Input exit on 2021-11-16 18:23:04.538542
