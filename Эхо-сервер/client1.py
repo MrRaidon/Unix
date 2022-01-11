@@ -6,12 +6,12 @@ password="123"
 print("Чтобы продолжить введите логин и пароль через запятую (glushchenko,123)")
 login, password = input().split(',')
 if login=="glushchenko" and password=="123":
-    add = ('', 9091)
+    add = ('localhost', 9091)
 
     print('ведите хост и порт через запятую')
     name, port = input().split(',')
     if name == "0" and port == "0":
-        name, port = '', 9091
+        name, port = '', 9090
     sock = socket.socket()
 
     sock.connect((name, int(port)))

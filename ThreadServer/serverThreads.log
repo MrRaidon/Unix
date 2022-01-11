@@ -53,3 +53,12 @@ INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-11-16 18:22:51.
 INFO:echo-server: Input wer on 2021-11-16 18:22:52.245919
 INFO:echo-server: Input exit on 2021-11-16 18:23:00.590804
 INFO:echo-server: Input exit on 2021-11-16 18:23:04.538542
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-12-17 19:50:07.257924
+INFO:echo-server: Input asdas on 2021-12-17 19:50:09.573571
+INFO:echo-server: Input None on 2021-12-17 19:52:19.921229
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-12-17 19:52:28.316177
+INFO:echo-server: Input asdasd on 2021-12-17 19:52:29.689882
+INFO:echo-server: Input None on 2021-12-17 19:53:15.670151
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2021-12-17 19:53:22.017153
+INFO:echo-server: Input asd on 2021-12-17 19:53:23.128991
+INFO:echo-server: Input None on 2021-12-17 19:55:27.623439
