@@ -108,3 +108,10 @@ INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2022-01-11 20:19:51.
 INFO:echo-server: Input create newTest on 2022-01-11 20:19:57.625263
 INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2022-01-11 20:20:36.517738
 INFO:echo-server: Input exitClient on 2022-01-11 20:20:41.814574
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2022-01-13 15:25:57.368422
+INFO:echo-server: Input serverStop on 2022-01-13 15:26:02.540056
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2022-01-13 15:26:42.874221
+INFO:echo-server: Input serverStop on 2022-01-13 15:26:47.948311
+INFO:echo-server: Client ['glushchenko', 'nikita'] login on 2022-01-13 15:28:33.053841
+INFO:echo-server: Input stopServer on 2022-01-13 15:28:37.559025
+INFO:echo-server: Input serverStop on 2022-01-13 15:28:51.812761

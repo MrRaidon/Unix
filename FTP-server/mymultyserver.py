@@ -86,7 +86,7 @@ def clients(conn, addr):
         elif text == 'serverStop' or not data:
             conn.send('CLOSETHREAD'.encode())
             conn.close()
-            exit(0)
+            os._exit(1)
             break
         else:
             print(f'Произошел прием данных на сервере {conn.send(response.encode())} от {info["login"]}')
