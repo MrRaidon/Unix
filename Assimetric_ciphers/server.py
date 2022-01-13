@@ -26,7 +26,7 @@ class DiffieHellman:
 
 
 HOST = '127.0.0.1'
-PORT = 2020
+PORT = 2022
 
 
 def main():
@@ -53,7 +53,7 @@ def main():
 
         elif type(data) == str:
             result = crypter.encryption(data)
-            print("Encrypted key", result)
+            print("Encrypted text", result)
 
         else:
             raise ValueError(f"Был принят неверный тип: {type(data)}")

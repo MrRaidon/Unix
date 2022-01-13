@@ -26,15 +26,15 @@ class DiffieHellman:
 
 
 HOST = '127.0.0.1'
-PORT = 2020
+PORT = 2022
 
 
 def main():
-    print('ведите хост и порт через запятую')
+    print('Введите хост и порт через запятую (0,0 для стандартного заполнения) ')
     host, port = input().split(',')
     if host == "0" and port == "0":
         HOST = '127.0.0.1'
-        PORT = 2020
+        PORT = 2022
     sock = socket.socket()
     sock.connect((HOST, PORT))
 
@@ -55,11 +55,11 @@ def main():
     sock.connect((HOST, PORT))
     crypter = FileCrypter(private_key)
     result = crypter.encryption("Sending is comlete")
-    print("Crypted text", result)
+    print("Crypted text: ", result)
     sock.send(pickle.dumps(result))
 
     result = crypter.encryption(result)
-    print("Encrypted text", result)
+    print("Encrypted text: ", result)
 
     sock.close()
 
