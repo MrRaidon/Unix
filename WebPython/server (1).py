@@ -1,7 +1,6 @@
 import mimetypes
 import os
 import socket
-import argparse
 
 
 class BrowserRequest():
@@ -9,6 +8,8 @@ class BrowserRequest():
     def __init__(self, data: bytes):
         lines = [d.strip() for d in data.decode('utf8','replace').split("\n") if d.strip()]
 
+        # First line takes the form of
+        # GET /file/path/ HTTP/1.1
         self.method, self.path, self.http_version = lines.pop(0).split(" ")
         self.info = {k: v for k, v in (l.split(': ') for l in lines)}
 
@@ -24,6 +25,7 @@ class BrowserRequest():
 
 
 class ServerSocket():
+    """Simplified interface for interacting with a web server socket"""
 
     def __init__(self, host='', port=80, buffer_size=1024, max_queued_connections=5):
         self._connection = None
@@ -79,14 +81,28 @@ class ServerSocket():
 
 
 class SimpleServer():
+    """A Simple webserver implemented in Python. NOT FOR PRODUCTION USE"""
 
-
+    STATUSES = {
+        200: 'Ok',
+        404: 'File not found',
+    }
+    response_404 = '<html><h1>404 File Not Found</h1></html>'
+    log_format = "{status_code} - {method} {path} {user_agent}"
 
     def __init__(self, port=80, homedir=os.path.curdir, page404=None):
+        """
+        Initialize a webserver
+
+        port    -- port to server requests from
+        homedir -- path to serve files out of
+        page404 -- optional path to HTML file for 404 errors
+        """
         self.socket = ServerSocket(port=port)
         self.homedir = os.path.abspath(homedir)
-
-    log_format = "{method} {path} {user_agent}"
+        if page404:
+            with open(page404) as f:
+                self.response_404 = f.read()
 
     def log(self, msg: str):
         print(msg)
@@ -112,16 +128,17 @@ class SimpleServer():
 
         header = self.get_header(status_code, path)
         self.socket.respond((header + body).encode())
-
-        self.log(self.log_format.format(method=request.method,
+        self.log(self.log_format.format(status_code=status_code,
+                                        method=request.method,
                                         path=request.path,
                                         user_agent=request.user_agent))
+
     def get_header(self, status_code: int, path: str):
         _, file_ext = os.path.splitext(path)
         return "\n".join([
-            "HTTP/1.1",
+            "HTTP/1.1 {} {}".format(status_code, self.STATUSES[status_code]),
             "Content-Type: {}".format(mimetypes.types_map.get(file_ext, 'application/octet-stream')),
-            "Server: Hello WebWorld"
+            "Server: SimplePython Server"
             "\n\n"
         ])
 
@@ -133,14 +150,16 @@ class SimpleServer():
             return self.response_404, 404
 
 
+if __name__ == "__main__":
+    import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('port', type=int, help='port to run the server on')
-args = parser.parse_args()
-server = SimpleServer(args.port)
-try:
-    server.serve()
-except:
-    os._exit(0)
-finally:
-    server.stop()
+    parser = argparse.ArgumentParser(description='Runs a simple Python server. Not for production')
+    parser.add_argument('port', type=int, help='port to run the server on')
+    args = parser.parse_args()
+    server = SimpleServer(args.port)
+    try:
+        server.serve()
+    except:
+        os._exit(0)
+    finally:
+        server.stop()
